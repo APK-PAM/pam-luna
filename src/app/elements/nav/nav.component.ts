@@ -95,40 +95,6 @@ export class ElementNavComponent implements OnInit {
         ]
       },
       {
-        id: 'Language',
-        name: 'Language',
-        children: [
-          {
-            id: 'English',
-            click: () => {
-              this._i18n.use('en');
-            },
-            name: 'English'
-          },
-          {
-            id: 'Chinese',
-            click: () => {
-              this._i18n.use('zh');
-            },
-            name: '中文'
-          },
-          {
-            id: 'Chinese-hant',
-            click: () => {
-              this._i18n.use('zh-hant');
-            },
-            name: '中文(繁體)'
-          },
-          {
-            id: 'Japanese',
-            click: () => {
-              this._i18n.use('ja');
-            },
-            name: '日本語'
-          }
-        ]
-      },
-      {
         id: 'Setting',
         name: 'Setting',
         children: [
@@ -200,35 +166,35 @@ export class ElementNavComponent implements OnInit {
           }
         ]
       },
-      {
-        id: 'Help',
-        name: 'Help',
-        children: [
-          {
-            id: 'Document',
-            click: () => {
-              this.HELP_DOCUMENT_URL = this._settingSvc.globalSetting.HELP_DOCUMENT_URL;
-              window.open(this.HELP_DOCUMENT_URL);
-            },
-            name: 'Document'
-          },
-          {
-            id: 'Support',
-            click: () => {
-              this.HELP_SUPPORT_URL = this._settingSvc.globalSetting.HELP_SUPPORT_URL;
-              window.open(this.HELP_SUPPORT_URL);
-            },
-            name: 'Support'
-          },
-          {
-            id: 'Download',
-            click: () => {
-              window.open('/core/download/', '_blank');
-            },
-            name: 'Download',
-          }
-        ]
-      },
+      // {
+      //   id: 'Help',
+      //   name: 'Help',
+      //   children: [
+      //     {
+      //       id: 'Document',
+      //       click: () => {
+      //         this.HELP_DOCUMENT_URL = this._settingSvc.globalSetting.HELP_DOCUMENT_URL;
+      //         window.open(this.HELP_DOCUMENT_URL);
+      //       },
+      //       name: 'Document'
+      //     },
+      //     {
+      //       id: 'Support',
+      //       click: () => {
+      //         this.HELP_SUPPORT_URL = this._settingSvc.globalSetting.HELP_SUPPORT_URL;
+      //         window.open(this.HELP_SUPPORT_URL);
+      //       },
+      //       name: 'Support'
+      //     },
+      //     {
+      //       id: 'Download',
+      //       click: () => {
+      //         window.open('/core/download/', '_blank');
+      //       },
+      //       name: 'Download',
+      //     }
+      //   ]
+      // },
     ];
   }
 

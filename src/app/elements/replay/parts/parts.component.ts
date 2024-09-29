@@ -108,13 +108,13 @@ export class ElementsPartsComponent implements OnInit {
     const currentLang = this.getUserLang();
 
     if (hours > 0) {
-      result += currentLang === 'zh-CN' ? `${hours} 小时 ` : `${hours} hour `;
+      result += currentLang === 'zh-CN' ? `${hours} hour ` : `${hours} hour `;
     }
     if (minutes > 0) {
-      result += currentLang === 'zh-CN' ? `${minutes} 分 ` : `${minutes} min `;
+      result += currentLang === 'zh-CN' ? `${minutes} min ` : `${minutes} min `;
     }
     if (remainingSeconds > 0 || (!hours && !minutes)) {
-      result +=  currentLang === 'zh-CN' ?  `${remainingSeconds} 秒` : `${remainingSeconds} s`;
+      result +=  currentLang === 'zh-CN' ?  `${remainingSeconds} s` : `${remainingSeconds} s`;
     }
 
     return result.trim();
